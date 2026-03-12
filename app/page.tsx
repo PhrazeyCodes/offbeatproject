@@ -99,8 +99,9 @@ export default function Home() {
             <div className="space-y-4 text-sm text-ink/60 leading-relaxed">
               <p>
                 Offbeat started with a simple idea: slow down and make something worth tasting. 
-                As Vietnamese-Americans in Sacramento, we grew up watching our family brew 
-                <em className="text-ink/80 not-italic"> cà phê</em> with a patience that felt almost meditative.
+                Founded by Vivian Tran and Thao Nguyen, Offbeat grew from years of pop-ups into
+                Sacramento&apos;s most intentional café — rooted in a love of
+                <em className="text-ink/80 not-italic"> cà phê</em> that started long before this building.
               </p>
               <p>
                 That same care is in every cup we make — ceremonial grade matcha, single-origin 
