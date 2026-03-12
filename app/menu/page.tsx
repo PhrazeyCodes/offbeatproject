@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Plus } from 'lucide-react'
-import { menuItems, milkChoices, sweetnessLevels, tempChoices, categoryLabels, type Category } from '@/lib/menu-data'
+import { menuItems, milkChoices, sweetnessLevels, tempChoices, categoryLabels, type Category, type MenuItem } from '@/lib/menu-data'
 import { useCart } from '@/lib/cart'
 import { fmt } from '@/lib/utils'
 
@@ -109,7 +109,7 @@ export default function MenuPage() {
 
 // ── Menu Card ──
 function MenuCard({ item, expanding, setExpanding, milk, setMilk, sweet, setSweet, temp, setTemp, onAdd }: {
-  item: ReturnType<typeof menuItems[0]['category'] extends string ? typeof menuItems[0] : never>
+  item: MenuItem
   expanding: string | null
   setExpanding: (id: string | null) => void
   milk: string; setMilk: (v: string) => void
